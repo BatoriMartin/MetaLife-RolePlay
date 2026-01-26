@@ -22,14 +22,217 @@
     <main>
         <section>
 
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+            color: #99f6f6;
+        }
+
+        .brand {
+            position: absolute;
+            right: 20px;
+            color: #99f6f6;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 120px 10% 60px 10%;
+        }
+
+        h1 {
+            color: #99f6f6;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #99f6f6;
+            margin-top: 30px;
+        }
+
+        p {
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* FORM */
+        .form-group {
+            margin-top: 25px;
+        }
+
+        label {
+            color: #99f6f6;
+            font-weight: bold;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            background: #0a0a0a;
+            border: 1px solid #99f6f6;
+            border-radius: 8px;
+            color: white;
+            font-size: 15px;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .options label {
+            font-weight: normal;
+            color: white;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        .submit-btn {
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #99f6f6;
+            color: black;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+
+<div class="content">
+
+    <h1>Whitelist rendszer</h1>
+
+    <p>
+        A szerveren egy whitelist rendszer működik, amely biztosítja, hogy csak megfelelően felkészült
+        játékosok csatlakozhassanak közösségünkhöz. Az alábbiakban részletesen bemutatjuk a folyamatot:
+    </p>
+
+    <h2>1. lépés: Írásbeli whitelist lap kitöltése</h2>
+    <p>
+        Az első lépés az írásbeli whitelist lap kitöltése, amelyet figyelmesen és alaposan szükséges elvégezni.
+        A lap beküldése előtt a szerver szabályzatát feltétlenül javasolt átolvasni és értelmezni.
+        Az eredményt a Discord szerverünk <i> ✅│bírálás│❌ </i> szobájában tesszük közzé.
+        Az írásbeli lapot maximum ötször töltheted ki.
+    </p>
+
+    <h2>Fontos tudnivalók</h2>
+    <p>
+        Az írásbeli lapok elbírálása folyamatosan történik.
+        A <i style="color: greenyellow;">@Játékos</i> rangot várhatóan 3 napon belül kapod meg.
+    </p>
+
+    <h1>Whitelist jelentkezés</h1>
+
+    <form method="post" action="mailto:batorimartin023@gmail.com?subject=MetaLife%20Whitelist" enctype="text/plain">
+
+        <div class="form-group">
+            <label>Email</label>
+            <input name="Email" type="email" placeholder="Írd be az email címed..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Discord neved</label>
+            <input name="Discord nev" type="text" placeholder="pl.: név#1234" required>
+        </div>
+
+        <div class="form-group">
+            <label>Hány éves vagy?</label>
+            <input name="Eletkor" type="number" placeholder="Életkorod..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Hol találtál a szerverre?</label>
+            <input name="Hol talalt a szerverre" type="text" placeholder="Írd le, honnan értesültél a szerverről..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Véleményed szerint mik a pozitív és a negatív szabályzati pontok a szerver szabályzatban?</label>
+            <textarea name="Pozitov/negativ szabalyzati pontok" placeholder="Írd le részletesen a véleményed..." ></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Szerinted milyen a jó RP? Te milyen RP-t képviselsz?</label>
+            <textarea name="Milyen a jo RP" placeholder="Írd le, te hogyan RP-zel, mit tartasz jónak..." required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Hány darab defektes kereked lehet autóval való menekülés közben?</label>
+            <input name="Defektes kerekek szama" type="text" placeholder="Írd be a választ..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Mekkora létszáma lehet maximum egy non-script frakciónak?</label>
+            <input name="Non-script frakció max letszam" type="text" placeholder="Írd be a választ..." required>
+        </div>
+
+        <div class="form-group">
+            <label>Maximum hány túsz rabolható el egy rablásra?</label>
+            <div class="options">
+                <label><input type="radio" name="Max tusz" value="4 túsz" > 4 túsz rabolható el</label>
+                <label><input type="radio" name="Max tusz" value="6 túsz"> 6 túsz rabolható el</label>
+                <label><input type="radio" name="Max tusz" value="12 túsz"> 12 túsz rabolható el</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Rablásokat milyen módon kezdhetünk el túszok nélkül?</label>
+            <div class="options">
+                <label><input type="radio" name="Rablas tusz nelkül" value="Bármilyen módon, nincs tiltva." > Bármilyen módon, nincs tiltva.</label>
+                <label><input type="radio" name="Rablas tusz nelkül" value="Ha minimum 3 rendőr van a szerveren."> Ha minimum 3 rendőr van a szerveren.</label>
+                <label><input type="radio" name="Rablas tusz nelkül" value="Semmilyen módon."> Semmilyen módon.</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Éppen elájultál, mentő segítségére szorulsz. A mentős már elkezdte RP-zni, hogy gyógyít téged, de lejárt a 10 perc, ezért megnyomod az E gombot, hogy újraéledj gyorsan. Helyesen cselekszel?</label>
+            <div class="options">
+                <label><input type="radio" name="Mentos RP" value="Igen" > Igen, mert a mentős nem tudott időben felszedni.</label>
+                <label><input type="radio" name="Mentos RP" value="Nem"> Nem, mert ez már RP-nek számít és ez alól tilos kilépni.</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Sikeres rablás esetén, ha rendőrség nem érkezett ki a helyszínre, a rablóknak hány percet kell várni?</label>
+            <div class="options">
+                <label><input type="radio" name="Varakozás rablas utan" value="5 perc"> 5 perc</label>
+                <label><input type="radio" name="Varakozás rablas utan" value="10 perc"> 10 perc</label>
+                <label><input type="radio" name="Varakozás rablas utan" value="Semennyit"> Semennyit</label>
+            </div>
+        </div>
+
+        <button class="submit-btn" type="submit">JELENTKEZÉS</button>
+
+    </form>
+
+</div>
+
         </section>
     </main>
     <footer>
-        <img src="" class="w-100">
+        <img src="footer.png" class="w-100">
     </footer>
 </body>
-
 </html>
+
+<!-- Köszi az űrlap alapját Noel! -->
 
 
 
