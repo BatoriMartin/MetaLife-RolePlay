@@ -1,0 +1,101 @@
+body {
+    background-color: black; /* #99f6f6 */
+}
+
+select {
+    width: 15vh;
+    height: 15vh;
+    background-image: url("kepek/logo.png");
+    background-size: cover;
+    background-position: center;
+    border: none;
+    font-size: 20px;
+    color: transparent;
+    margin-left: 3vh;
+    cursor: pointer;
+    margin-top: 1.5vh;
+    border-radius: 4vh;
+}
+
+option {
+    background-color: black;
+    color: #99f6f6;
+    font-size: 4vh;
+}
+
+header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: #99f6f6;
+    padding: 4vh;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.szoveg {
+    color: white;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 2%;
+    border-left: 1px solid #99f6f6;
+    font-size: 2.3vh;
+}
+
+.szoveg2 {
+    color: white;
+    text-align: center;
+    font-size: 2.3vh;
+    border-right: 1px solid #99f6f6;
+}
+
+input {
+    color: #99f6f6;
+    background-color: transparent;
+    border: 2px solid #99f6f6;
+    font-size: 4vh;
+    border-radius: 3vh;
+    padding: 2.5vh
+}
+
+input::placeholder {
+    color: white;
+}
+
+fieldset {
+    border: 3px solid #99f6f6;
+    border-radius: 6vh;
+}
+
+button {
+    padding: 3.5vh;
+    font-size: 3.4vh;
+    background-color: transparent;
+    color: #99f6f6;
+    border-radius: 5vh;
+    border-top: 2px solid #99f6f6;
+    border-left: 2px solid #99f6f6;
+}
+
+button:hover {
+    padding: 3.5vh;
+    font-size: 3.4vh;
+    background-color: transparent;
+    color: #99f6f6;
+    border-radius: 5vh;
+    border-bottom: 2px solid #99f6f6;
+    border-right: 2px solid #99f6f6;
+    border-top: none;
+    border-left: none;
+    transition: 1s;
+}
