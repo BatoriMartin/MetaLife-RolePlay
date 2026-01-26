@@ -5,7 +5,7 @@ body {
 select {
     width: 15vh;
     height: 15vh;
-    background-image: url("kepek/logo.png");
+    background-image: url("logo.png");
     background-size: cover;
     background-position: center;
     border: none;
@@ -98,4 +98,5 @@ button:hover {
     border-top: none;
     border-left: none;
     transition: 1s;
+
 }
