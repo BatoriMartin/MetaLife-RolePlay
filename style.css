@@ -3,8 +3,8 @@ body {
 }
 
 select {
-    width: 8vh;
-    height: 8vh;
+    width: 5vh;
+    height: 5vh;
     background-image: url("menu.png");
     background-size: cover;
     background-position: center;
@@ -34,7 +34,6 @@ section {
 
 h1 {
     color: #99f6f6;
-    padding: 2vh;
 }
 
 h3 {
