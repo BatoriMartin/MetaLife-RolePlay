@@ -3,8 +3,8 @@ body {
 }
 
 select {
-    width: 60%;
-    height: 60%;
+    width: 47%;
+    height: 47%;
     background-image: url("menu.png");
     background-size: cover;
     background-position: center;
