@@ -11,9 +11,7 @@ select {
     border: none;
     font-size: 20px;
     color: transparent;
-    margin-left: 3vh;
     cursor: pointer;
-    margin-top: 1.5vh;
     border-radius: 4vh;
 }
 
