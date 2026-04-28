@@ -46,6 +46,41 @@
             color: white;
             line-height: 1.6;
         }
+        .form-wrapper {
+      width: 100%;
+      max-width: 900px;
+      padding: 16px;
+      box-sizing: border-box;
+    }
+
+    .form-frame-container {
+      position: relative;
+      width: 100%;
+      padding-top: 140%;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      background: #0b1020;
+    }
+            .form-frame-container iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (min-width: 768px) {
+      .form-frame-container {
+        padding-top: 110%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .form-frame-container {
+        padding-top: 90%;
+      }
+    }
     </style>
 
 
@@ -76,7 +111,15 @@
 
     <h1>Whitelist jelentkezés</h1>
 
-    <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSczXB9M9FDP_jwE1pjIf603PATmrbor1sLCH5g7fH0maOecZw/viewform?embedded=true" width="700" height="1300" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe></center>
+     <div class="form-wrapper">
+    <div class="form-frame-container">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSczXB9M9FDP_jwE1pjIf603PATmrbor1sLCH5g7fH0maOecZw/viewform?embedded=true"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 
 </div>
 
